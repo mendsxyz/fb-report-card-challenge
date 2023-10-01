@@ -38,11 +38,11 @@ function checkCrossDesktop(e) {
         });
             
         tableHeaderCells.forEach(cell => {
-            cell.style.fontSize = "0.88rem";
+            cell.style.fontSize = "1rem";
         });
             
         tableDataCells.forEach(cell => {
-            cell.style.fontSize = "0.86rem";
+            cell.style.fontSize = "1rem";
         });
             
         scoreSummaryHeaderCells.forEach(cell => {
