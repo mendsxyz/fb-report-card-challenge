@@ -504,6 +504,7 @@ section.infoToParents > span:first-child{
     }
     
     section.studentAttributes > .subjectGrades {
+        max-height: 350px;
         border: 0.08rem solid #000;
         border-collapse: collapse;
     }
