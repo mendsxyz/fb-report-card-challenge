@@ -1,0 +1,660 @@
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("./font/SpaceGrotesk-Regular.otf");
+}
+
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle{
+    font-size: 0.4rem;
+    line-height: 100%;
+}
+
+.subtitle-bold{
+    font-size: 0.4rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.subtitle-bold-uppercase{
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.body{
+    font-size: 0.15rem;
+    line-height: 120%;
+    margin-bottom: 0.2rem;
+}
+
+.body-uppercase{
+    font-size: 0.1rem;
+    text-transform: uppercase;
+}
+
+.body-bold{
+    font-size: 0.15rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.body-bold-uppercase{
+    font-size: 0.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.items-center{
+    text-align: center;
+}
+
+.container{
+    width: 94%;
+    height: auto;
+    max-height: 97%;
+    padding: 1% 1% 0;
+    margin: 3% 3% 0;
+    border: 0.08rem solid #000;
+    position: fixed;
+    overflow-y: auto;
+}
+
+header{
+    font-weight: bold;
+    border-bottom: 0.08rem solid #000;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+header > div{
+    height: 4rem;
+    width: 15%;
+    padding: 0;
+    border-right: 0.08rem solid #000;
+}
+
+header > div:nth-child(2){
+    width: 70%;
+    text-align: center;
+}
+
+header > div:last-child{
+    border-right: none;
+}
+
+header > .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .logo > img{
+    width: 2rem;
+    height: auto;
+    margin: auto;
+}
+
+header > .schInfo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header > .schInfo > div{
+    height:0.4rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .schInfo > div > span{
+    margin: 0;
+}
+
+header > .schInfo > span:last-child{
+    font-size: 0.6rem;
+}
+
+header > .studentPhotoId{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header > .studentPhotoId > img{
+    width: 70%;
+    height: 60%;
+    margin-bottom: 0.4rem;
+}
+
+section{
+    border-bottom: 0.08rem solid #000;
+}
+
+section.studentInfo > div{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.resumptionAndAttendance{
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.resumptionAndAttendance > div{
+    min-width: 33.3%;
+    height: 2.2rem;
+    padding: 0.2rem 0.2rem 0;
+    border-right: 0.08rem solid #000;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    flex-direction: column;
+}
+
+section.resumptionAndAttendance > div:first-child{
+    padding: 0.2rem 0.2rem 0 0;
+}
+
+section.resumptionAndAttendance > div:last-child{
+    border-right: 0;
+}
+
+section.resumptionAndAttendance > div > span{
+    margin-bottom: 0.2rem;
+}
+
+section.studentAttributes{
+    padding: 0.2rem 0;
+    display: grid;
+    align-content: center;
+    justify-items: stretch;
+    grid-template-columns: 2fr, 1fr;
+    grid-auto-flow: column;
+    gap: 0.2rem;
+}
+
+section.studentAttributes > .subjectGrades{
+    min-width: 224px;
+    max-height: 200px;
+    border: 0.08rem solid #000;
+    border-collapse: collapse;
+}
+
+section.studentAttributes .subjectGrades tr:first-child > th{
+    height: auto;
+    min-height: 2rem;
+    border-right: 0.08rem solid #000;
+    border-bottom: 0.08rem solid #000;
+    transform: rotateY(180deg) rotateX(180deg);
+    writing-mode: vertical-rl;
+}
+
+section.studentAttributes .subjectGrades tr:first-child > th:first-child{
+    background: none;
+    height: 5rem;
+    width: 6rem;
+    padding-left: 0.2rem;
+    text-align: left;
+    transform: none;
+    border-right: 0.08rem solid #000;
+    writing-mode: horizontal-tb;
+}
+
+section.studentAttributes .subjectGrades tr:first-child > th:last-child{
+    border-right: 0;
+}
+
+section.studentAttributes .subjectGrades tr > td{
+    min-height: 1rem;
+    padding: 0.2rem 0;
+    text-align: center;
+    border-right: 0.08rem solid #000;
+    border-bottom: 0.08rem solid #000;
+}
+
+section.studentAttributes .subjectGrades tr > td:first-child{
+    padding-left: 0.2rem;
+    text-align: left;
+}
+
+section.studentAttributes > div > .skills{
+    border: 0.08rem solid #000;
+    border-collapse: collapse;
+}
+
+section.studentAttributes > div > .skills tr > th{
+    height: 0.8rem;
+    min-width: 5.4rem;
+    text-align: left;
+    padding-left: 0.2rem;
+    border-right: 0.08rem solid #000;
+    border-bottom: 0.08rem solid #000;
+}
+
+section.studentAttributes > div > .skills tr > td{
+    min-width: 0.8rem;
+    text-align: center;
+    border-bottom: 0.08rem solid #000;
+}
+
+section.studentAttributes > div > .skills:last-child tr > th{
+    min-width: 1.4rem;
+}
+
+section.studentAttributes > div > .skills:last-child tr > td{
+    min-width: 4.8rem;
+    padding-left: 0.2rem;
+    text-align: left;
+}
+
+section.summary{
+    padding: 0.2rem 0 0 0;
+    display: grid;
+    grid-template-columns: 80%, 20%;
+    grid-auto-flow: column;
+    align-content: stretch;
+    justify-content: start;
+    gap: 0;
+}
+
+section.summary > div{
+    margin-right: 0;
+    display:flex;
+    align-items:baseline;
+    justify-content:left;
+    flex-direction:column;
+    border-right:0;
+}
+
+section.summary > div:last-child{
+    padding-left: 0.2rem;
+    margin-right: 0;
+    display:flex;
+    align-items:baseline;
+    justify-content:left;
+    border-left: 0.08rem solid #000;
+}
+
+section.summary > div > .scoreSummary{
+    border: 0.08rem solid #000;
+    border-collapse: collapse;
+}
+
+section.summary > div > .scoreSummary tr > th{
+    text-align: left;
+    min-width: 2.76rem;
+}
+
+section.summary > div > .scoreSummary tr > th,
+section.summary > div > .scoreSummary tr > td{
+    padding: 0.1rem 0.2rem;
+    border-right: 0.08rem solid #000;
+}
+
+section.remarks{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    flex-direction: column;
+}
+
+section.remarks > div{
+    max-height: 0.8rem;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+section.infoToParents{
+    padding: 0.2rem 0;
+    border-bottom: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.infoToParents > span:first-child{
+    min-width: 5rem;
+}
+
+@media screen and (min-width:769px){
+    .title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 0.4rem;
+    }
+
+    .subtitle{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 100%;
+    }
+    
+    .subtitle-bold{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 100%;
+    }
+
+    .subtitle-bold-uppercase{
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100%;
+    }
+
+    .body{
+    font-size: 1.2rem;
+    line-height: 100%;
+    margin-bottom: 0.4rem;
+    }
+
+    .body-bold{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 100%;
+    }
+    
+    .body-uppercase{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    }
+
+    .body-bold-uppercase{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    }
+
+    .container{
+        width: 80%;
+        height: auto;
+        margin: 10%;
+        position: fixed;
+    }
+    
+    header{
+    font-weight: bold;
+    border-bottom: 0.08rem solid #000;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    }
+
+    header > div{
+    height: 8.5rem;
+    width: 15%;
+    padding: 0;
+    border-right: 0.08rem solid #000;
+    }
+
+    header > div:nth-child(2){
+    width: 70%;
+    text-align: center;
+    }
+
+    header > div:last-child{
+    border-right: none;
+    }
+
+    header > .logo > img{
+    width: 80%;
+    height: 80%;
+    }
+
+    header > .schInfo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    header > .schInfo > div{
+    height: 1rem;
+    margin-bottom: 0.6rem;
+    }
+    
+    header > .schInfo > span:last-child{
+        font-size: 1.4rem;
+    }
+    
+    section{
+    padding: 0.4rem;
+    border-bottom: 0.08rem solid #000;
+    }
+    
+    section.studentInfo > div{
+    padding: 0;
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    section.resumptionAndAttendance {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.resumptionAndAttendance > div {
+        min-width: 33.3%;
+        height: 5rem;
+        padding: 0.4rem 0.8rem 0 0.8rem;
+        border-right: 0.08rem solid #000;
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        flex-direction: column;
+    }
+    
+    section.resumptionAndAttendance > div:first-child {
+        padding: 0.4rem 0.8rem 0 0;
+    }
+    
+    section.resumptionAndAttendance > div:last-child {
+        border-right: 0;
+    }
+    
+    section.resumptionAndAttendance > div > span {
+        margin-bottom: 0.4rem;
+    }
+    
+    section.studentAttributes {
+        padding: 0.4rem 0;
+        display: grid;
+        align-content: center;
+        justify-items: stretch;
+        grid-template-columns: 80%, 20%;
+        grid-auto-flow: column;
+        gap: 0.4rem;
+    }
+    
+    section.studentAttributes > .subjectGrades {
+        border: 0.08rem solid #000;
+        border-collapse: collapse;
+    }
+    
+    section.studentAttributes .subjectGrades tr:first-child > th {
+        height: auto;
+        min-height: 2rem;
+        padding: 0.4rem 0;
+        border-right: 0.08rem solid #000;
+        border-bottom: 0.08rem solid #000;
+        writing-mode: vertical-rl;
+    }
+    
+    section.studentAttributes .subjectGrades tr:first-child > th:first-child {
+        background: none;
+        height: 10rem;
+        min-width: 14.6rem;
+        padding-left: 0.4rem;
+        text-align: left;
+        border-right: 0.08rem solid #000;
+        writing-mode: horizontal-tb;
+    }
+    
+    section.studentAttributes .subjectGrades tr:first-child > th:last-child {
+        border-right: 0;
+    }
+    
+    section.studentAttributes .subjectGrades tr > td {
+        min-height: 1.2rem;
+        padding: 0.4rem;
+        text-align: center;
+        border-right: 0.08rem solid #000;
+        border-bottom: 0.08rem solid #000;
+    }
+    
+    section.studentAttributes .subjectGrades tr > td:first-child {
+        /*min-width: 14.4rem;*/
+        padding-left: 0.4rem;
+        text-align: left;
+    }
+    
+    section.studentAttributes > div > .skills {
+        border: 0.08rem solid #000;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+    
+    section.studentAttributes > div > .skills:last-child{
+        margin-bottom: 0;
+    }
+    
+    section.studentAttributes > div > .skills tr > th {
+        height: auto;
+        min-width: 12rem;
+        text-align: left;
+        padding: 0.1rem 0.4rem;
+        border-right: 0.08rem solid #000;
+        border-bottom: 0.08rem solid #000;
+    }
+    
+    section.studentAttributes > div > .skills tr > td {
+        min-width: 2rem;
+        text-align: center;
+        border-bottom: 0.08rem solid #000;
+    }
+    
+    section.studentAttributes > div > .skills:last-child tr > th {
+        min-width: 2.8rem;
+    }
+    
+    section.studentAttributes > div > .skills:last-child tr > td {
+        min-width: 11rem;
+        padding-left: 0.4rem;
+        text-align: left;
+    }
+    
+    section.summary {
+        padding: 0.6rem 0 0 0;
+        display: grid;
+        grid-template-columns: 80%, 20%;
+        grid-auto-flow: column;
+        align-content: stretch;
+        justify-content: start;
+        gap: 0;
+    }
+    
+    section.summary > div {
+        margin-right: 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        flex-direction: column;
+        border-right: 0;
+    }
+    
+    section.summary > div:last-child {
+        padding-left: 0.4rem;
+        margin-right: 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        border-left: 0.08rem solid #000;
+    }
+    
+    section.summary > div > .scoreSummary {
+        border: 0.08rem solid #000;
+        border-collapse: collapse;
+    }
+    
+    section.summary > div > .scoreSummary tr > th {
+        text-align: left;
+        min-width: 7.34rem;
+    }
+    
+    section.summary > div > .scoreSummary tr > th,
+    section.summary > div > .scoreSummary tr > td {
+        padding: 0.4rem;
+        border-right: 0.08rem solid #000;
+    }
+    
+    section.remarks {
+        padding: 0.6rem 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        flex-direction: column;
+    }
+    
+    section.remarks > div {
+        max-height: 1.8rem;
+        padding: 0;
+        margin-bottom: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    section.remarks > div:last-child{
+        margin-bottom: 0;
+    }
+    
+    section.infoToParents {
+        padding: 0.6rem 0;
+        border-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.infoToParents >span:first-child {
+        min-width: 12rem;
+    }
+    
+}
