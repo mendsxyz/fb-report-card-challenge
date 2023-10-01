@@ -203,7 +203,7 @@ section.studentAttributes{
 
 section.studentAttributes > .subjectGrades{
     min-width: 224px;
-    max-height: 200px;
+    max-height: 300px;
     border: 0.08rem solid #000;
     border-collapse: collapse;
 }
