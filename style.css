@@ -78,12 +78,9 @@
 .container{
     width: 94%;
     height: auto;
-    max-height: 97%;
     padding: 1% 1% 0;
     margin: 3% 3% 0;
     border: 0.08rem solid #000;
-    position: fixed;
-    overflow-y: auto;
 }
 
 header{
