@@ -400,9 +400,9 @@ section.infoToParents > span:first-child{
 
     .container{
         width: 80%;
-        max-width:800px;
+        max-width:720px;
         height: auto;
-        margin: 10% auto;
+        margin: 10% 280px;
         position: fixed;
     }
     
